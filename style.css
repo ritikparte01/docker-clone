@@ -1,0 +1,615 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+body{
+    background: #031f30;
+}
+
+body.light{
+    background: white;
+}
+
+.container{
+    height: 500vh;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    background: #0f1c24;
+    /* background: red; */
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo .mob{
+    display: none;
+}
+
+.search{
+    margin-left: 10px;
+}
+
+.search input{
+    width: 200px;
+    height: 32px;
+    background: #2c3337;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 30px;
+    /* background: url(./img/icons8-search1.svg); */
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left;
+}
+
+.search input::placeholder{
+    color: white;
+}
+
+.main-nav{
+    display: flex;
+    margin-left: 20px;
+}
+
+.bars{
+    display: none;
+}
+
+.main-nav li{
+    list-style: none;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: #97ceef;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-nav li a:hover{
+    border-bottom: 5px solid #6f818f;
+    padding-bottom: 13px;   
+   opacity: .8;
+}
+
+.active{
+    border-bottom: 5px solid #1282d7;
+    padding-bottom: 13px;   
+    /* padding-right: 20px; */
+
+}
+
+.switch{
+    width: 150px;
+    height: 35px;
+    background: transparent;
+    color: white;
+    border: 1px solid #97ceef;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.switch:hover{
+    background: #97ceef;
+    color: #0f1c24;
+    border: 1px solid #2c3337;
+}
+
+
+.black{
+    width: 100%;
+    height: 35px;
+    background: black;
+}
+
+hr{
+    background: #1282d7;
+    border: none;
+    height: 1px;
+}
+
+
+aside{
+    background: #0f1c24;
+    height: 100vh;
+    width: 14%;
+    display: inline-block;
+    position: fixed;
+    top: 55px;
+    left: 0;
+}
+
+.side-nav{
+    width: 100%;
+    background: #0f1c24;
+    color: #97ceef;
+    border-left: 2px solid #1282d7;
+}
+
+.side-nav li{
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 15px;
+    list-style: none;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.side-nav .active1{
+    background: #0b1419 !important;
+    font-weight: 600;
+}
+
+.side-nav li a{
+    text-decoration: none;
+    color: #97ceef;
+}
+.sub-cat{
+    border-left: 2px solid #1282d7;
+    margin-top: 10px;
+    display: none;
+}
+
+.sub-cat li{
+    font-size: 12px;
+}
+
+
+
+
+main{
+    height: 100vh;
+    width: 86%;
+    background: #031f30;
+    float: right;
+    padding: 40px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.doc-over{
+    width: 89%;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.doc-over h1{
+    font-size: 38px;
+}
+
+.sub-heading{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.desc{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+
+.doc-platform{
+    margin-top: 25px;
+    width: 89%;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 10px;
+}
+
+.doc-platform h1{
+    font-size: 35px;
+}
+
+.detail{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lists{
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.use-for{
+    margin-top: 25px;
+    width: 89%;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 10px;
+}
+
+.use-for h1{
+    font-size: 35px;
+}
+
+.para{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.doc-arch{
+    margin-top: 25px;
+    width: 89%;
+    font-size: 14px;
+    line-height: 30px;
+    padding-right: 10px;
+}
+
+
+.doc-arch img{
+    margin-top: 20px;
+}
+
+
+ol{
+    padding-left: 30px;
+}
+
+
+.space{
+    height: 100px;
+}
+
+#bars{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------MEDIA QUERY FOR MOBILES ------------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+{
+    .header{
+        padding-left: 15px;
+        justify-content: space-between;
+    }
+    
+    .logo .desk{
+        display: none;
+    }
+
+    .logo .mob{
+        display: block;
+        width: 40px;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .switch{
+        display: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .bars{
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .black{
+        display: none;
+    }
+
+    aside{
+        width: 100%;
+        height: 270px;
+    }
+
+    #aside{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+        padding: 25px;
+    }
+
+    main .doc-over h1{
+        font-size: 25px;
+    }
+    .doc-over{
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    .sub-heading{
+        margin-top: 0;
+    }
+ 
+    .doc-platform {
+        width: 100%;
+        padding-right: 5px;
+    }
+
+    .doc-platform h1{
+        font-size: 25px;
+    }
+
+    .use-for{
+        width: 100%;
+    }
+
+    .use-for h1{
+        font-size: 25px;
+    }
+
+    .doc-arch{
+        width: 100%;
+    }
+
+    
+    .doc-arch img{
+    margin-top: 20px;
+    width: 99%;
+    }
+    
+
+}
+
+/* -------------MEDIA QUERY FOR LARGE PHONE OR SMALL TABS------------ */
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px)
+{
+    .header{
+        padding-left: 15px;
+        justify-content: space-between;
+    }
+    
+    .logo .desk{
+        display: none;
+    }
+
+    .logo .mob{
+        display: block;
+        width: 40px;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .switch{
+        display: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .bars a{
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .black{
+        display: none;
+    }
+    
+    aside{
+        width: 100%;
+        height: 270px;
+    }
+    
+    aside{
+        width: 100%;
+        height: 270px;
+        display: none;
+    }
+    main{
+        width: 100%;
+        padding: 25px;
+    }
+
+    main .doc-over h1{
+        font-size: 25px;
+    }
+    .doc-over{
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    .sub-heading{
+        margin-top: 0;
+    }
+ 
+    .doc-platform {
+        width: 100%;
+        padding-right: 5px;
+    }
+
+    .doc-platform h1{
+        font-size: 25px;
+    }
+
+    .use-for{
+        width: 100%;
+    }
+
+    .use-for h1{
+        font-size: 25px;
+    }
+
+    .doc-arch{
+        width: 100%;
+    }
+
+    
+    .doc-arch img{
+    margin-top: 20px;
+    width: 99%;
+    }
+    
+    
+}
+
+/* --------MEDIA QUERY FOR TAB----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .header{
+        padding-left: 15px;
+        justify-content: space-between;
+    }
+    
+    .logo .desk{
+        display: none;
+    }
+
+    .logo .mob{
+        display: block;
+        width: 40px;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .switch{
+        display: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .bars a{
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .black{
+        display: none;
+    }
+    
+    aside{
+        width: 100%;
+        height: 270px;
+    }
+    
+    aside{
+        width: 100%;
+        height: 270px;
+        display: none;
+    }
+    main{
+        width: 100%;
+        padding: 25px;
+    }
+
+    main .doc-over h1{
+        font-size: 25px;
+    }
+    .doc-over{
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    .sub-heading{
+        margin-top: 0;
+    }
+ 
+    .doc-platform {
+        width: 100%;
+        padding-right: 5px;
+    }
+
+    .doc-platform h1{
+        font-size: 25px;
+    }
+
+    .use-for{
+        width: 100%;
+    }
+
+    .use-for h1{
+        font-size: 25px;
+    }
+
+    .doc-arch{
+        width: 100%;
+    }
+
+    
+    .doc-arch img{
+    margin-top: 20px;
+    width: 99%;
+    }
+    
+}
+
+/* sidebar onn */
+/* ---------MEDIA QUERY FOR LAPTOPS--------------- */
+@media only screen and (min-device-width: 989px) and (max-device-width: 1366px){
+    .logo .desk{
+        display: block;
+    }
+    .logo .mob{
+        display: none;
+    }
+
+    .main-nav{
+        display: flex;
+    }
+
+    .bars{
+        display: none;
+    }
+
+}
